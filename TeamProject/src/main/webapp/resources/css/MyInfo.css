@@ -1,0 +1,317 @@
+:root {
+    --myInfo-bg: rgb(255, 255, 255);
+    --myInfo-tab-bg: rgb(39, 38, 38);
+  
+    --myInfo-tab-div-span-bg-hover: hsl(222deg, 13%, 20%);
+    --myInfo-tab-div-span-color: white;
+    --myInfo-tab-div-span-color-hover: #f68500;
+    --myInfo-contents-bg: rgb(186, 187, 189);
+    --myInfo-privacy-form-bg: rgb(186, 187, 189);
+    --myInfo-preset-contents-bg: rgb(186, 187, 189);
+    --myInfo-preset-item-bg: rgb(186, 187, 189);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .myInfo-contents button {
+    border-radius: 20px;
+    background: #f0f0f0;
+    color: black;
+    font-weight: bold;
+    border: none;
+  }
+  .myInfo-contents button:hover {
+    background: black;
+    color: white;
+  
+    transition: 0.1s ease-in-out;
+  }
+  
+  .myInfo-contents input {
+    outline: none;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .myInfo {
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: var(--myInfo-bg);
+  }
+  
+  .myInfo-tab {
+    width: 380px;
+    height: 840px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    background: var(--myInfo-tab-bg);
+    box-shadow: 5px 10px 8px var(--myInfo-tab-bg);
+    border-radius: 10px;
+  }
+  
+  .myInfo-tab div {
+    width: 100%;
+    height: 10%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .myInfo-tab span {
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: var(--myInfo-tab-div-span-bg);
+    color: var(--myInfo-tab-div-span-color);
+    font-size: 24pt;
+    font-weight: 600;
+  }
+  
+  .myInfo-tab span:hover {
+    background: var(--myInfo-tab-div-span-bg-hover);
+    color: var(--myInfo-tab-div-span-color-hover);
+  
+    transition: color, background-color 0.1s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .myInfo-contents {
+    width: 760px;
+    height: 840px;
+  
+    display: flex;
+    justify-content: center;
+  
+    box-shadow: 5px 10px 8px var(--myInfo-tab-bg);
+    border-radius: 10px;
+    background: var(--myInfo-contents-bg);
+    margin-left: 60px;
+  }
+  
+  .myInfo-contents .privacy-form {
+    width: 600px;
+    height: 760px;
+  
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  
+    background: var(--myInfo-privacy-form-bg);
+    margin-top: 40px;
+  }
+  
+  .myInfo-contents .privacy-form .form-item {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  
+  .myInfo-contents .privacy-form .form-item span {
+    color: white;
+    font-size: 20pt;
+    font-weight: 600;
+  }
+  .myInfo-contents .privacy-form .form-item div:first-child {
+    width: 600px;
+    height: 50px;
+  }
+  
+  .myInfo-contents .privacy-form .form-item div:last-child {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .myInfo-contents .privacy-form .form-item div:last-child input,
+  .myInfo-contents .privacy-form .form-item div:last-child button {
+    border-radius: 5px;
+  }
+  
+  .myInfo-contents .privacy-form .form-item div:last-child button {
+    font-size: 18pt;
+  }
+  
+  .myInfo-contents .privacy-form .form-item .id,
+  .myInfo-contents .privacy-form .form-item .pw,
+  .myInfo-contents .privacy-form .form-item .username,
+  .myInfo-contents .privacy-form .form-item .auth {
+    font-size: 24pt;
+    width: 100%;
+  }
+  
+  .myInfo-contents .privacy-form .form-item .id,
+  .myInfo-contents .privacy-form .form-item .username {
+    border-bottom-width: 0;
+    background-color: hsl(227deg, 12%, 85%);
+  }
+  
+  .myInfo-contents .privacy-form .form-item .re-pw,
+  .myInfo-contents .privacy-form .form-item .email {
+    font-size: 24pt;
+    width: 350px;
+  }
+  
+  .myInfo-contents .privacy-form .form-item .pw-chk,
+  .myInfo-contents .privacy-form .form-item .email-chk {
+    font-size: 14pt;
+    width: 220px;
+    height: 100%;
+  }
+  
+  .myInfo-contents .privacy-form .drop-member {
+    font-size: 24pt;
+    width: 100%;
+  }
+  
+  .myInfo-contents .preset-contents {
+    width: 600px;
+    height: 760px;
+    border: 1px solid white;
+    border-radius: 10px;
+  
+    margin-top: 40px;
+    background: var(--myInfo-preset-contents-bg);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  
+  .myInfo-contents .preset-contents form {
+    width: 100%;
+    height: 150px;
+    margin-top: 40px;
+  }
+  
+  .myInfo-contents .preset-contents .preset-property {
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .myInfo-contents .preset-contents .preset-item {
+    width: 100%;
+    height: 150px;
+    background: var(--myInfo-preset-item-bg);
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .myInfo-contents .preset-contents .preset-item div {
+    border: 1px solid white;
+    width: 33%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .myInfo-contents .preset-contents .preset-item div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .myInfo-contents .preset-contents .preset-item div span {
+    font-size: 18pt;
+    color: white;
+    background: var(--myInfo-preset-item-bg);
+    font-weight: bold;
+  }
+  
+  .myInfo-contents .preset-contents .preset-item div a {
+    width: 180px;
+    height: 32px;
+    border-radius: 20px;
+    background: white;
+    color: inherit;
+    font-size: 18pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  .myInfo-contents .preset-contents .preset-item div a:hover {
+    background: black;
+    color: white;
+  }
+  
+  .myInfo-contents .preset-contents .preset-item div button {
+    width: 180px;
+    height: 32px;
+    font-size: 18pt;
+    font-weight: bold;
+    background: white;
+  }
+  
+  .myInfo-contents .preset-contents .preset-item div button:hover {
+    color: white;
+    background: black;
+  
+    transition: background-color 0.1s ease-in-out;
+  }
+  
+  .myInfo-contents .preset-contents .preset-property {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .myInfo-contents .preset-contents .preset-property .property-item {
+    width: 33%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .myInfo-contents
+    .preset-contents
+    .preset-property
+    .property-item
+    input[type="text"],
+  .myInfo-contents .preset-contents .preset-property .property-item button {
+    width: 180px;
+    height: 50px;
+    font-size: 18pt;
+    border-radius: 20px;
+  }
+  
+  .site-update,
+  .site-output {
+    width: 100%;
+  }

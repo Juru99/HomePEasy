@@ -1,0 +1,103 @@
+:root {
+    --search-bg : hsl(226deg 10% 21%);
+    --search-container-bg : hsl(225deg 10% 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+
+   
+
+  }
+
+  .search-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid tomato;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+     background: var(--search-bg);
+  }
+
+  .search-container form {
+    width: 500px;
+    height: 500px;
+    border: 1px solid tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: var(--search-container-bg);
+
+    border-radius: 10px;
+  }
+
+  .search-container .form-logo {
+    border: 1px solid tomato;
+    width: 400px;
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-container .form-logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .search-container .form-item {
+    border: 1px solid tomato;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.search-container .form-item input {
+    border-radius: 5px;
+}
+
+  .search-container .form-item .name,
+  .search-container .form-item .year {
+    font-size: 24pt;
+    border: 1px solid tomato;
+
+    width: 92%;
+    height: 100%;
+    font-size: 20pt
+
+    
+  }
+
+  .search-container .form-item .email {
+    border: 1px solid tomato;
+
+    width: 60%;
+    height: 100%;
+    font-size: 20pt;
+
+  }
+
+  .search-container .form-item .auth {
+    width: 30%;
+    height: 100%;
+    font-size: 20pt;
+    margin-left: 2%;
+  }

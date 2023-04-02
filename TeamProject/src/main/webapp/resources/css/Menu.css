@@ -1,0 +1,252 @@
+:root{
+    --menu-logout-bg : hsl(225deg, 10%, 8%);
+    
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .loginMenu-container,
+  .logoutMenu-container {
+    width: 100vw;
+    height: 60px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+	background: rgb(31, 30, 30);
+
+    font-size: 13px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", "Noto Sans", "Open sans", "Nanum Gothic",
+    "Tahoma", "Verdana", "Arial", "Trebuchet MS", sans-serif;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 80%);
+
+  overflow: hidden;
+    position: relative;
+
+  }
+  
+  .loginMenu-container .loginMenu-left,
+  .logoutMenu-container .logoutMenu-left {
+    width: 35%;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  
+  }
+  
+  .loginMenu-container .loginMenu-left div,
+  .loginMenu-container .loginMenu-right div,
+  .logoutMenu-container .logoutMenu-left div,
+  .logoutMenu-container .logoutMenu-right div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginMenu-container .loginMenu-left .logo,
+  .logoutMenu-container .logoutMenu-left .logo
+  {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .loginMenu-container .loginMenu-left .logo img,
+  .logoutMenu-container .logoutMenu-left .logo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    
+  }
+  
+  .loginMenu-container .loginMenu-right {
+    width: 17%;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .loginMenu-container .loginMenu-right .myInfo a,
+  .loginMenu-container .loginMenu-right .logout a {
+    background: var(--menu-logout-bg);
+    color: white;
+    font-size: 18pt;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .loginMenu-container .loginMenu-right .myInfo a:hover,
+  .loginMenu-container .loginMenu-right .logout a:hover{
+    background: white;
+    color:black;
+    font-size: 18pt;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .loginMenu-container .loginMenu-left .guide a,
+  .loginMenu-container .loginMenu-left .service a{
+    background: var(--menu-logout-bg);
+    color: white;
+    font-size: 18pt;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .loginMenu-container .loginMenu-left .guide a:hover,
+  .loginMenu-container .loginMenu-left .service a:hover{
+    background: white;
+    color:black;
+    font-size: 18pt;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+
+  }
+
+  .loginMenu-container .loginMenu-left .templete a,
+  .logoutMenu-container .loginMenu-left .templete a {
+    background: var(--menu-logout-bg);
+    color: white;
+    font-size: 18pt;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }  
+  
+  .loginMenu-container .loginMenu-left .templete a:hover,
+  .logoutMenu-container .loginMenu-left .templete a:hover {
+    background: white;
+    color:black;
+    font-size: 18pt;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .logoutMenu-container .logoutMenu-right {
+    width: 9%;
+    height: 100%;
+  }
+  
+
+  .logoutMenu-container .logoutMenu-right div {
+    height: 100%;
+  }
+  
+  .logoutMenu-container .logoutMenu-right .login a{
+    background: var(--menu-logout-bg);
+    color: white;
+    font-size: 18pt;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .logoutMenu-container .logoutMenu-right .login a:hover{
+    background: white;
+    color:black;
+    font-size: 18pt;
+
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .logoutMenu-container .logoutMenu-left .guide a,
+  .logoutMenu-container .logoutMenu-left .service a,
+  .logoutMenu-container .logoutMenu-left .templete a{
+    background: var(--menu-logout-bg);
+    color: white;
+    font-size: 18pt;
+    
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .logoutMenu-container .logoutMenu-left .guide a:hover,
+  .logoutMenu-container .logoutMenu-left .service a:hover,
+  .logoutMenu-container .logoutMenu-left .templete a:hover{
+    background: white;
+    color:black;
+    font-size: 18pt;
+    
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in-out;
+
+  }
+
+  @media screen and (max-width:1280px) {
+    .loginMenu-container .loginMenu-right .myInfo a,
+  .loginMenu-container .loginMenu-right .logout a,
+  .loginMenu-container .loginMenu-left .guide a:hover,
+  .loginMenu-container .loginMenu-left .service a:hover,
+  .loginMenu-container .loginMenu-left .guide a,
+  .loginMenu-container .loginMenu-left .service a,
+  .loginMenu-container .loginMenu-right .myInfo a:hover,
+  .loginMenu-container .loginMenu-right .logout a:hover,
+ .loginMenu-container .loginMenu-left .templete a,
+  .logoutMenu-container .loginMenu-left .templete a,
+.loginMenu-container .loginMenu-left .templete a:hover,
+  .logoutMenu-container .loginMenu-left .templete a:hover{
+      font-size: 14px;
+      transition: font-size 1s;
+    }
+
+    
+  }
+
+  .loginMenu-container .loginMenu-right .myInfo a,
+  .loginMenu-container .loginMenu-right .logout a,
+  .loginMenu-container .loginMenu-left .guide a:hover,
+  .loginMenu-container .loginMenu-left .service a:hover,
+  .loginMenu-container .loginMenu-left .guide a,
+  .loginMenu-container .loginMenu-left .service a,
+ .loginMenu-container .loginMenu-left .templete a,
+  .logoutMenu-container .loginMenu-left .templete a,
+  .loginMenu-container .loginMenu-right .myInfo a:hover,
+  .loginMenu-container .loginMenu-right .logout a:hover,
+.loginMenu-container .loginMenu-left .templete a:hover,
+  .logoutMenu-container .loginMenu-left .templete a:hover{
+    transition: font-size 1s;
+  }

@@ -1,0 +1,255 @@
+:root {
+    --service-bg : rgb(255, 255, 255);
+    --service-container-bg : rgb(186, 187, 189);
+    --service-filter-span-hover-bg : hsl(222deg, 13%, 20%);
+    --service-filter-span-hover-color : #ffb158;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+
+    background: var(--service-bg);
+
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .service {
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  
+  .service .filter-container {
+    width: 50%;
+    height: 10%;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: var(--service-container-bg);
+    border-radius: 10px;
+
+	border: 1px solid black;
+    
+
+  }
+  
+  .service .filter-container div {
+    width: 25%;
+    height: 80%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service .filter-container .help,
+  .service .filter-container .notice,
+  .service .filter-container .ques {
+    font-size: 24pt;
+
+    background: var(--service-container-bg);
+
+    border-radius: 20px;
+
+    color: white;
+  }
+
+
+
+  .service .filter-container .help:hover,
+  .service .filter-container .notice:hover,
+  .service .filter-container .ques:hover {
+    background: var(--service-filter-span-hover-bg);
+    color: var(--service-filter-span-hover-color);
+
+    border-radius: 20px;
+
+  }
+  
+  .service .search-container {
+    width: 50%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--service-container-bg);
+    border-radius: 10px;
+border: 1px solid black;
+  }
+  
+  .service .search-container div {
+    width: 70%;
+    height: 70%;
+  }
+  
+  .service .search-container .search {
+    width: 100%;
+    height: 100%;
+    font-size: 20pt;
+
+    border-radius: 10px;
+border: 1px solid black;
+
+  }
+  
+  .service .contents-container {
+    width: 50%;
+    height: 80%;
+
+    background: var(--service-container-bg);
+    border-radius: 10px;
+	border: 1px solid black;
+  }
+  
+  .service .contents-container .help-contents {
+    width: 100%;
+    height: 100%;
+
+    padding-right: 20%;
+    padding-left: 10%;
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    color: white;
+
+  }
+  
+  .service .contents-container .help-contents .title {
+    font-size: 28pt;
+  }
+  
+  .service .contents-container .help-contents .help-toggle {
+    width: 100%;
+    height: 50%;
+    background: none;
+    border: none;
+
+    color: white;
+  }
+  
+  .service .contents-container .help-contents .help-toggle:hover {
+    color: #2962ff;
+  }
+  
+  .service .contents-container .help-contents .help-toggle span {
+    font-size: 18pt;
+    float: left;
+    margin-left: 5%;
+  }
+  
+  .service .contents-container .help-contents .answer {
+    font-size: 14pt;
+    padding-left: 10%;
+  }
+  
+  .service .contents-container .notice-contents,
+  .service .contents-container .ques-contents {
+    width: 100%;
+    height: 100%;
+ 
+    padding-right: 20%;
+    padding-left: 10%;
+
+    color: white;
+  }
+  
+  .service .contents-container .notice-contents .title,
+  .service .contents-container .ques-contents .title {
+    margin-top: 10%;
+  }
+  
+  .service .contents-container .notice-contents .title span,
+  .service .contents-container .ques-contents .title span {
+    font-size: 28pt;
+  }
+  
+  .service .contents-container .notice-contents .notice,
+  .service .contents-container .ques-contents .ques {
+    padding-top: 3%;
+    padding-left: 5%;
+    font-size: 14pt;
+  }
+  
+  .service .contents-container .notice-contents .notice a,
+  .service .contents-container .ques-contents .ques a {
+    color: white;
+  }
+
+  .service .contents-container .notice-contents .notice a:hover,
+  .service .contents-container .ques-contents .ques a:hover {
+    color: #2962ff;
+  }
+  
+  .service .contents-container .notice-contents .notice span:nth-child(2),
+  .service .contents-container .ques-contents .ques span:nth-child(2) {
+    float: right;
+  }
+  
+  .service .btn-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .service .btn-area input {
+    width: 100px;
+    height: 50px;
+    font-size: 14pt;
+    margin-left: 10px;
+  }
+  
+  .service .contents-container .notice-contents .btn-area input,
+  .service .contents-container .ques-contents .btn-area input {
+    color: white;
+    background: black;
+
+    font-weight: 500;
+
+    border-radius: 5px;
+  }
+
+  .service .contents-container .notice-contents .btn-area input:hover,
+  .service .contents-container .ques-contents .btn-area input:hover {
+    color:black;
+    background: white;
+
+    font-weight: 500;
+
+    border-radius: 5px;
+  }

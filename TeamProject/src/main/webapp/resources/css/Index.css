@@ -1,0 +1,218 @@
+:root {
+  --container-width: 98.8vw;
+}
+/* Index CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.video-container,
+.slider-container,
+.interview-container,
+.brand-container {
+  overflow-x: hidden;
+}
+
+.video-container {
+  width: var(--container-width);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 75vw;
+  height: 80vh;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: var(--container-width);
+  height: 100vh;
+}
+
+.slider-container .left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.slider-container .left-slide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+.slider-container .right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-container .action-buttons button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 15px;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+.slider-container .action-buttons button:hover {
+  color: #222;
+}
+.slider-container .action-buttons button:focus {
+  outline: none;
+}
+
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.slider-container .right-slide div {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-container {
+  width: var(--container-width);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.brand-container img {
+  width: 80%;
+  height: 90%;
+}
+
+/* Index Content CSS */
+.interview-container {
+  width: var(--container-width);
+}
+
+.interview-container .mycard {
+  height: 100%;
+  width: 100%;
+  max-width: 24rem;
+}
+.interview-container .card {
+  width: 400px;
+  height: 550px;
+  margin: 0 0.5em;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  font-size: 0.9em;
+}
+.interview-container-inner {
+  padding: 1em;
+}
+
+.interview-container .card-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0.5em;
+  border-radius: 0;
+  box-shadow: 0px 0px 4px 2px rgba(22, 22, 26, 0.18);
+  font-size: 0.9em;
+}
+.interview-container .card-title {
+  font-weight: bold;
+  --tw-text-opacity: 1;
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
+  text-align: center;
+}
+.interview-container .carddescription {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+  text-align: center;
+}
+.interview-container .card-text {
+  font-size: 20px;
+  width: 350px;
+}
+.interview-container .img-wrapper {
+  max-width: 100%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.slider-container .right-slide img,
+.interview-container .img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.interview-container-inner {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1600px) {
+  .interview-container-inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .interview-container-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 4);
+    margin-top: 20px;
+  }
+  .interview-container .img-wrapper {
+    height: 220px;
+  }
+
+  .card-text {
+    width: 350px;
+  }
+}
