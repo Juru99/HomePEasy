@@ -48,3 +48,7 @@ HomePEasy는 HomePage + Easy의 합성어로 홈페이지 제작 웹사이트 �
 
 # 프로젝트 소개 영상
 https://www.youtube.com/watch?v=9Kdz3CIMd6U
+
+# 문서
+와이어프레임 : https://docs.google.com/presentation/d/1sAw2boyduy62Y5YyYNyj3AmCObqdisX_A43f-AII050/edit?usp=sharing  
+WBS : https://docs.google.com/spreadsheets/d/1MVOw011WRIp63MR1Yd0z4IxrFHZcHDnmWP1byPuVzs4/edit?usp=sharing  
