@@ -37,6 +37,8 @@ HomePEasy는 HomePage + Easy의 합성어로 홈페이지 제작 웹사이트 �
   <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white"/>
 </div>
 
+### 프론트엔드 작업 기여도 : 90%
+
 - 와이어프레임 문서 작성
 - WBS 문서 작성
 - 로그인, 회원가입, 고객센터 페이지 UI 개발
