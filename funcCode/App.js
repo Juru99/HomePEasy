@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
 
-// 편집 끝내기 시 userViewPage의 코드를 가져옴.
 var isDelete = true;
 function AssistEnd() {
   const header = document.querySelector("#header");
   const main = document.querySelector("#main");
   const footer = document.querySelector("#footer");
-  console.log(header);
-  console.log(main);
-  console.log(footer);
+	
   let userViewCode = header.outerHTML + main.outerHTML + footer.outerHTML;
-  // header.outerHTML = userViewCode;
-  // outerHTML 잘되는거 확인 완료
-  console.log(userViewCode);
 }
 
 function AssistContainer({ changeMenuValue, changeSiteValue }) {
@@ -110,7 +104,6 @@ function delMenu(event) {
     document.querySelector("#" + event.target.parentElement.id)
   );
 
-  // 정규식 사용하여 번호만 추출
   const str = "#" + event.target.parentElement.id;
   const result = str.replace(/[^0-9]/g, "");
 
@@ -549,7 +542,7 @@ function AssistSidebar({
               displayBorder = !displayBorder;
               window.removeEventListener("keydown", keyDownDelete);
               if (addBlockId == "addBlockArea-1") {
-                headerCount--; // count가 0이 될때까지 키를 누르고 있는 동안 줄어드는 문제가 있음.
+                headerCount--;
                 isDelete = false;
                 if (headerCount <= 0) {
                   header.style.height = "40px";
@@ -686,7 +679,7 @@ function AssistSidebar({
               displayBorder = !displayBorder;
               window.removeEventListener("keydown", keyDownDelete);
               if (addBlockId == "addBlockArea-1") {
-                headerCount--; // count가 0이 될때까지 키를 누르고 있는 동안 줄어드는 문제가 있음.
+                headerCount--;
                 isDelete = false;
                 if (headerCount <= 0) {
                   header.style.height = "40px";
@@ -823,7 +816,7 @@ function AssistSidebar({
               displayBorder = !displayBorder;
               window.removeEventListener("keydown", keyDownDelete);
               if (addBlockId == "addBlockArea-1") {
-                headerCount--; // count가 0이 될때까지 키를 누르고 있는 동안 줄어드는 문제가 있음.
+                headerCount--;
                 isDelete = false;
                 if (headerCount <= 0) {
                   header.style.height = "40px";
@@ -960,7 +953,7 @@ function AssistSidebar({
               displayBorder = !displayBorder;
               window.removeEventListener("keydown", keyDownDelete);
               if (addBlockId == "addBlockArea-1") {
-                headerCount--; // count가 0이 될때까지 키를 누르고 있는 동안 줄어드는 문제가 있음.
+                headerCount--;
                 isDelete = false;
                 if (headerCount <= 0) {
                   header.style.height = "40px";
@@ -1097,7 +1090,7 @@ function AssistSidebar({
               displayBorder = !displayBorder;
               window.removeEventListener("keydown", keyDownDelete);
               if (addBlockId == "addBlockArea-1") {
-                headerCount--; // count가 0이 될때까지 키를 누르고 있는 동안 줄어드는 문제가 있음.
+                headerCount--;
                 isDelete = false;
                 if (headerCount <= 0) {
                   header.style.height = "40px";
@@ -1234,7 +1227,7 @@ function AssistSidebar({
               displayBorder = !displayBorder;
               window.removeEventListener("keydown", keyDownDelete);
               if (addBlockId == "addBlockArea-1") {
-                headerCount--; // count가 0이 될때까지 키를 누르고 있는 동안 줄어드는 문제가 있음.
+                headerCount--;
                 isDelete = false;
                 if (headerCount <= 0) {
                   header.style.height = "40px";
@@ -1333,7 +1326,6 @@ function AssistSidebar({
         image.style.userSelect = "none";
 
         image.addEventListener("dblclick", (event) => {
-          //changeIsText(); 는 텍스트 생성할때
           changeIsComponentTab();
           changeIsSrc();
           isDelete = true;
@@ -1375,7 +1367,7 @@ function AssistSidebar({
               displayBorder = !displayBorder;
               window.removeEventListener("keydown", keyDownDelete);
               if (addBlockId == "addBlockArea-1") {
-                headerCount--; // count가 0이 될때까지 키를 누르고 있는 동안 줄어드는 문제가 있음.
+                headerCount--;
                 isDelete = false;
                 if (headerCount <= 0) {
                   header.style.height = "40px";
@@ -1684,29 +1676,4 @@ function App() {
     </div>
   );
 }
-/* 가장 하단에 load쓰면 됨.
-window.addEventListener("load", () => {
-  
-  const header = document.querySelector("#header");
-  const main = document.querySelector("#main");
-  const footer = document.querySelector("#footer");
-  console.log(header);
-  console.log(main);
-  console.log(footer);
-  
-});
-*/
-/*
-window.addEventListener("load", () => {
-  const header = document.querySelector("#header");
-  const menuList = document.querySelector("#menuList");
-  console.log(header);
-  console.log(menuList);
-
-  const gnb = document.createElement("div");
-  const gnbList = document.createElement("ul");
-  const gnbListItem = document.createElement("li");
-  
-});
-*/
 export default App;
