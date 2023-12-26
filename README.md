@@ -1,10 +1,11 @@
-# 홈페이지 빌더 개발 프로젝트 HomePEasy (4人)
-HomePEasy는 HomePage + Easy의 합성어로 홈페이지 빌더 개발 프로젝트입니다.  
-홈페이지에 쉽게 컴포넌트를 추가 · 수정 · 삭제할 수 있고  
-홈페이지를 저장하고 내보내서 본인만의 홈페이지로 활용하는 것도 가능합니다.
+# 프로젝트 소개
+**HomePEasy**는 HomePage + Easy의 합성어로 **홈페이지 빌더 개발 4인 프로젝트**입니다.  
+사용자가 전문 지식 없이도 웹사이트를 만들 수 있도록 블록과 위젯을 제공하고 사용자 경험을 향상시키기 위해 React로 SPA를 개발했습니다.
+
 
 유한대학교 컴퓨터소프트웨어공학과 졸업작품팀  
-개발 기간 : 2022.08.29 ~ 2022.11.16
+개발 기간 : 2022.08.29 ~ 2022.11.16  
+팀 구성 : 웹 디자이너 1인, **프론트엔드 개발자 1인**, 백엔드 개발자 2인
 
 <div><h1>📚 STACKS</h1></div>
 <div align=center> 
@@ -37,16 +38,13 @@ HomePEasy는 HomePage + Easy의 합성어로 홈페이지 빌더 개발 프로�
   <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white"/>
 </div>
 
-### 프론트엔드 작업 기여도 : 90%
+### 담당 업무
 
-- 와이어프레임 문서 작성
-- WBS 문서 작성
-- 로그인, 회원가입, 고객센터 페이지 UI 개발
-- 홈페이지, 가이드 페이지 디자인
-- 홈페이지 제작 서비스 UI 개발 및 디자인
-- 홈페이지 제작 서비스 기능 구현
-  - 글, 이미지, 동영상 컴포넌트 추가 · 수정 · 삭제 기능 구현
-  - 메뉴/하위메뉴 추가 · 수정 · 삭제 기능 구현
+- ReactJS의 함수형 컴포넌트를 활용하여 블록, 위젯 등의 UI 컴포넌트 개발
+- useState Hook을 활용하여 컴포넌트 추가 탭, 속성 탭 등의 메뉴 상태 관리
+- 로그인 및 회원가입, 고객센터 페이지 개발
+- 3개 경쟁사를 분석한 후 와이어프레임 문서를 작성하여 UI 설계
+- WBS 문서를 작성하여 개발 일정 관리
 
 # 프로젝트 소개 영상
 https://www.youtube.com/watch?v=9Kdz3CIMd6U
@@ -55,7 +53,7 @@ https://www.youtube.com/watch?v=9Kdz3CIMd6U
 와이어프레임 : https://docs.google.com/presentation/d/1sAw2boyduy62Y5YyYNyj3AmCObqdisX_A43f-AII050/edit?usp=sharing  
 WBS : https://docs.google.com/spreadsheets/d/1MVOw011WRIp63MR1Yd0z4IxrFHZcHDnmWP1byPuVzs4/edit?usp=sharing  
 
-# 프로젝트를 이용한 결과물 화면
+# 홈페이지 빌더 도구를 활용한 결과물
 
 ### [네오플]
 ![네오플](https://github.com/Juru99/HomePEasy/assets/96530621/fd908756-5cc5-41f7-a983-29da22f3ad81)
